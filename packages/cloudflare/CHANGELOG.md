@@ -1,5 +1,15 @@
 # @vinext/cloudflare
 
+## 1.2.2
+
+### Performance
+
+- **App Router:** resolve layout special errors from the render (#4269)
+
+### Contributors
+
+- @james-elicx
+
 ## 1.2.1
 
 ### Bug Fixes

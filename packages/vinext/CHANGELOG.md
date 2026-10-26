@@ -1,5 +1,24 @@
 # vinext
 
+## 1.3.2
+
+### Bug Fixes
+
+- **Image:** keep vinext/shims/image on the shim when next/image is user-aliased (#4264)
+- **Dev:** resolve vinext's shim paths through Vite so dev loads one instance (#4310)
+
+### Performance
+
+#### App Router
+
+- render only below the layouts a navigation holds (#4276)
+- stop probing layouts before the render (#4273)
+- resolve layout special errors from the render (#4269)
+
+### Contributors
+
+- @james-elicx
+
 ## 1.3.1
 
 ### Bug Fixes
@@ -50,7 +69,7 @@
 
 #### Misc
 
-- **Dev:** keep vinext's next/* shims out of the dependency optimizer (#4268)
+- **Dev:** keep vinext's next/\* shims out of the dependency optimizer (#4268)
 - **Deploy:** let a legacy experimental.cacheComponents override the top-level key in project detection (#4306)
 - **Router:** keep Pages data requests out of document redirects (#4299)
 - **RSC:** stop including react-server-dom-webpack/static.edge in dev (#4272)
@@ -91,7 +110,7 @@
 
 - keep the App Router runtime off pages that don't use next/navigation (#4227)
 - load page-owned client shims only on pages that use them (#4226)
-- preload the page and _app chunks in the initial HTML (#4223)
+- preload the page and \_app chunks in the initial HTML (#4223)
 
 #### Server
 
